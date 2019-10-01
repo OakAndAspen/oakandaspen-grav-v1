@@ -30,7 +30,7 @@ class __TwigTemplate_d7e678a013c6ffcbdcb19f430db9c4cc0250bc5a7845e8ef014b9103ce1
         if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "simplesearch", []), "enabled", [])) {
             // line 2
             echo "<div class=\"sidebar-content\">
-    <h4>SimpleSearch</h4>
+    <h4>Simple Search</h4>
     ";
             // line 4
             $this->loadTemplate("partials/simplesearch_searchbox.html.twig", "partials/sidebar.html.twig", 4)->display($context);
@@ -64,8 +64,8 @@ class __TwigTemplate_d7e678a013c6ffcbdcb19f430db9c4cc0250bc5a7845e8ef014b9103ce1
         }
         // line 19
         echo "<div class=\"sidebar-content\">
-\t<h4>Some Text Widget</h4>
-\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+\t<h4>Welcome</h4>
+\t<p>In February 2019, I started writing articles for my blog as I was taking a plane to the farthest place I've even been to: San Francisco. I wrote my first three articles during that trip, and haven't been very consistent since then. I hope to find the time to write again.</p>
 </div>
 ";
         // line 23
@@ -137,7 +137,7 @@ class __TwigTemplate_d7e678a013c6ffcbdcb19f430db9c4cc0250bc5a7845e8ef014b9103ce1
     {
         return new Source("{% if config.plugins.simplesearch.enabled %}
 <div class=\"sidebar-content\">
-    <h4>SimpleSearch</h4>
+    <h4>Simple Search</h4>
     {% include 'partials/simplesearch_searchbox.html.twig' %}
 </div>
 {% endif %}
@@ -154,8 +154,8 @@ class __TwigTemplate_d7e678a013c6ffcbdcb19f430db9c4cc0250bc5a7845e8ef014b9103ce1
 </div>
 {% endif %}
 <div class=\"sidebar-content\">
-\t<h4>Some Text Widget</h4>
-\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+\t<h4>Welcome</h4>
+\t<p>In February 2019, I started writing articles for my blog as I was taking a plane to the farthest place I've even been to: San Francisco. I wrote my first three articles during that trip, and haven't been very consistent since then. I hope to find the time to write again.</p>
 </div>
 {% if config.plugins.taxonomylist.enabled %}
 <div class=\"sidebar-content\">
@@ -175,6 +175,6 @@ class __TwigTemplate_d7e678a013c6ffcbdcb19f430db9c4cc0250bc5a7845e8ef014b9103ce1
     <a class=\"button\" href=\"{{ feed_url }}.atom\"><i class=\"fa fa-rss-square\"></i> Atom 1.0</a>
     <a class=\"button\" href=\"{{ feed_url }}.rss\"><i class=\"fa fa-rss-square\"></i> RSS</a>
 </div>
-{% endif %}", "partials/sidebar.html.twig", "C:\\localhost\\oakandaspen-grav-v1\\user\\themes\\deliver\\templates\\partials\\sidebar.html.twig");
+{% endif %}", "partials/sidebar.html.twig", "C:\\xampp\\htdocs\\oakandaspen-grav-v1\\user\\themes\\deliver\\templates\\partials\\sidebar.html.twig");
     }
 }
