@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/oakandaspen-grav-v1/user/data/notifications/e4f065b6937eb509dedad5e0f57a9206.yaml',
-    'modified' => 1569915880,
+    'modified' => 1569938621,
     'data' => [
-        'last_checked' => 1569915880,
+        'last_checked' => 1569938621,
         'data' => [
             'feed' => [
                 0 => [

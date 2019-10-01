@@ -1,8 +1,10 @@
 enabled: true
-from: your@email.here
-to: your@email.here
+from: admin@oakandaspen.ch
+from_name: OakAndAspen
+to: irinadespot@gmail.com
+to_name: Irina Despot
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
     server: localhost
     port: 25
@@ -10,4 +12,6 @@ mailer:
     user: ''
     password: ''
   sendmail:
-    bin: '/usr/sbin/sendmail'
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1569919302,
-    'checksum' => 'a7b5b65a7e69038696235ec4dcae6d11',
+    'timestamp' => 1569937373,
+    'checksum' => 'fbb44b43c21a79a613af4486513083c7',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1569421070
+                'modified' => 1569936775
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
@@ -216,9 +216,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'your@email.here',
+                'from' => 'webmaster@oakandaspen.ch',
                 'from_name' => NULL,
-                'to' => 'your@email.here',
+                'to' => 'webmaster@oakandaspen.ch',
                 'to_name' => NULL,
                 'queue' => [
                     'enabled' => false,
