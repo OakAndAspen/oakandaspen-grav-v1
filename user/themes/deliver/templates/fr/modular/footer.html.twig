@@ -1,0 +1,47 @@
+<div class="modular-row footer {{ page.header.class }}">
+    <div class="footer-items">
+        <div class="footer-module large">
+            <div class="logo">
+                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
+            </div>
+            {% if site.footer.fr.description %}
+                <p>{{ site.footer.fr.description }}</p>
+            {% endif %}
+        </div>
+        <div class="footer-module"><h4>{{ site.footer.fr.contact_title }}</h4>
+            <p>
+                {% for item in site.contact.address %}
+                    <span>{{ item.line }}</span>
+                {% endfor %}
+            </p>
+            <p>{{ site.author.email }}</p>
+            <p><strong>{{ site.contact.gps }}</strong></p>
+        </div>
+        <div class="footer-module"><h4>{{ site.footer.fr.social_title }}</h4>
+            <div class="logo">
+                {% block social %}
+                    {% include 'partials/social.html.twig' %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="footer-module"><h4>{{ site.footer.fr.language_title }}</h4>
+            <ul style="list-style-type: none; list-style-position: inside; margin: 0;">
+                <li><a href="/en">English</a></li>
+                <li><a href="/fr">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-modules">
+        <div class="footer-copyright">
+            {{ site.author.copyright }}
+        </div>
+        <div class="footer-menu">
+            <ul class="othermenu">
+                {% for module in site.othermenu %}
+                    <li><a href="{{ module.url }}">{{ module.text }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
